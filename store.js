@@ -1,17 +1,12 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 
-// import {postReducer} from './post.slice'
 import counterReducer from './feature/counter/counter.slice'
+import postsReducer from './feature/posts/posts.slice'
+
 
 export default configureStore({
   reducer: {
-    // post: postReducer,
+    posts: postsReducer,
     counter: counterReducer
   }
 })
-
-
-// export default combineReducers({
-//   post: postReducer,
-//   counter: counterReducer
-// })
