@@ -1,7 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-
-
 export const counterSlice = createSlice({
   name: 'counter',
 
@@ -9,20 +7,11 @@ export const counterSlice = createSlice({
     value: 0
   },
 
-
-
-
-
   reducers: {
     addValue: (state, action) => {
-      console.log(state)
-      console.log(action)
       state.value = state.value + action.payload.value
     }
   }
-
-
-
 })
 
 

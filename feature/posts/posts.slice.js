@@ -44,7 +44,6 @@ export const fetchPosts = () => async dispatch => {
 
   const res = await fetch('http://localhost:3001/api/posts')
   const data = await res.json()
-  console.log(data)
   dispatch(fetchingPosts({posts: data.posts}))
 
   dispatch(finishLoading())
